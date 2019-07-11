@@ -1,0 +1,33 @@
+<script src="https://fast.wistia.com/embed/medias/57xnbmvkl8.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script>
+	(function() {
+	  var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+	                              window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+	  window.requestAnimationFrame = requestAnimationFrame;
+	})();
+
+	function laptop() {
+
+	  var videoBox = document.getElementById('wistia_responsive_wrapper');
+	  var rect = videoBox.getBoundingClientRect();
+	  var videoBoxBezel = videoBox.parentNode;
+	  videoBoxBezel.style.paddingTop     = rect.height*0.24386;
+	  videoBoxBezel.style.paddingBottom  = rect.height*0.40175;
+	  videoBoxBezel.style.paddingLeft    = rect.width*0.21721;
+	  videoBoxBezel.style.paddingRight   = rect.width*0.22131;
+
+		requestAnimationFrame(laptop);
+	}
+	requestAnimationFrame(laptop);
+</script>
+<div class="wistia_responsive_padding"
+			style="background: url(https://floqast.com/wp-content/uploads/2019/07/Laptop.png) center center no-repeat; background-size: contain;">
+	<div id="wistia_responsive_wrapper" class="wistia_responsive_wrapper" style="">
+		<div class="wistia_embed wistia_async_57xnbmvkl8 seo=false videoFoam=true" style="height:100%;position:relative;width:100%">
+			<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+				<img src="https://fast.wistia.com/embed/medias/57xnbmvkl8/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+			</div>
+		</div>
+	</div>
+</div>
