@@ -12,10 +12,10 @@
 	  var videoBox = document.getElementById('wistia_responsive_wrapper');
 	  var rect = videoBox.getBoundingClientRect();
 	  var videoBoxBezel = videoBox.parentNode;
-	  videoBoxBezel.style.paddingTop     = rect.height*0.24386;
-	  videoBoxBezel.style.paddingBottom  = rect.height*0.40175;
-	  videoBoxBezel.style.paddingLeft    = rect.width*0.21721;
-	  videoBoxBezel.style.paddingRight   = rect.width*0.22131;
+		videoBoxBezel.style.paddingTop     = "" + rect.height*0.24386  + "px";
+		videoBoxBezel.style.paddingBottom  = "" + rect.height*0.40175  + "px";
+		videoBoxBezel.style.paddingLeft    = "" + rect.width*0.21721   + "px";
+		videoBoxBezel.style.paddingRight   = "" + rect.width*0.22131   + "px";
 
 		requestAnimationFrame(laptop);
 	}
